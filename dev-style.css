@@ -8,7 +8,11 @@
     width: 100%;
     background-color: #fff;
 }
-
+p {
+    color: rgb(18, 15, 36); 
+    padding: 10px;
+    background-color: #fff;
+}
 div h2 {
     color: #fff;
     width: 100%;
