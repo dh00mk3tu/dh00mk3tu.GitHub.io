@@ -9,9 +9,10 @@
     background-color: #fff;
 }
 p {
-    color: rgb(18, 15, 36); 
+    text-decoration: none;
+    color: #fff; 
     padding: 10px;
-    background-color: #fff;
+
 }
 div h2 {
     color: #fff;
@@ -22,7 +23,37 @@ div h2 {
     background-color: #0b1b4e;
 }
 
+div btn {
+    position: relative;
+    height: 20px;
+    width: 80px;
+    border: none;
+    outline: none;
+    color: #fff;
+    cursor: pointer;
+    
+}
+
 ul li {
     padding: 10px;
     color: #fff;
 }
+
+a:link {
+    color: red;
+  }
+  
+  /* visited link */
+  a:visited {
+    color: green;
+  }
+  
+  /* mouse over link */
+  a:hover {
+    color: hotpink;
+  }
+  
+  /* selected link */
+  a:active {
+    color: rgb(73, 223, 198);
+  }
