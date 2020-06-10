@@ -14,7 +14,7 @@ body {
 }
 
 #particle-js {
-    height: 120%;
+    height: 100vh;
     z-index: 0;
     background: #262626;
 }
@@ -39,11 +39,11 @@ ul{
     font-family: 'Poppins', sans-serif;
     position: absolute;
     top: 150px;
-    left: 95px;
+    left: 90px;
     display: flex;
     flex-direction: column;
     justify-content: center;
-    align-items: center;
+    align-items: left;
 ;
 }
 

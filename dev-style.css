@@ -1,0 +1,24 @@
+* {
+    padding; 0;
+    margin: 0;
+    background:#0d0f1b;
+}
+
+.header {
+    width: 100%;
+    background-color: #fff;
+}
+
+div h2 {
+    color: #fff;
+    width: 100%;
+    padding: 10px;
+    justify-content: center;
+    align-items: center;
+    background-color: #0b1b4e;
+}
+
+ul li {
+    padding: 10px;
+    color: #fff;
+}
