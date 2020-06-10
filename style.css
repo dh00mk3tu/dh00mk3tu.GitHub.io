@@ -3,8 +3,6 @@
 * {
     margin: 0;
     padding: 0;
-    height: 100vh;
-    width: 100vh;
 }
 
 .wrapper {
@@ -39,13 +37,12 @@ header {
 ul{
     z-index: 1;
     font-family: 'Poppins', sans-serif;
-    position: absolute;
-    top: 150px;
-    left: 90px;
+    position: relative;
+    top: 30px;
     display: flex;
     flex-direction: column;
     justify-content: center;
-    align-items: left;
+    align-items: center;
 ;
 }
 
@@ -57,10 +54,10 @@ ul li:before {
     content:attr(data-text);
     position: absolute;
     top:60%;
-    left: 50%;
+    left: 53%;
     transform: translate(-50%, -50%);
     color: #fff;
-    font-size: 6em;
+    font-size: 2em;
     font-weight:700;
     pointer-events: none;
     opacity: 0;
@@ -83,7 +80,7 @@ ul li a {
     text-transform: uppercase;
     letter-spacing: 2px;
     overflow: hidden;
-    border-radius: 10px;
+    
     transition: 0.5s;
     z-index: 1;
 }
