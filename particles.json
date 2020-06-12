@@ -71,12 +71,12 @@
     "detect_on": "canvas",
     "events": {
       "onhover": {
-        "enable": false,
+        "enable": true,
         "mode": "bubble"
       },
       "onclick": {
         "enable": true,
-        "mode":["push", "repulse"]
+        "mode": "grab"
       },
       "resize": true
     },
@@ -95,11 +95,11 @@
         "speed": 6
       },
       "repulse": {
-        "distance": 400,
-        "duration": 0.4
+        "distance": 200,
+        "duration": 1
       },
       "push": {
-        "particles_nb": 4
+        "particles_nb": 10
       },
       "remove": {
         "particles_nb": 2
