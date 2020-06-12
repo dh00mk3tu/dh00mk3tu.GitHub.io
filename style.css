@@ -78,11 +78,11 @@ h1 span:nth-child(9){
     0%,100% {
         color: #fff;
         filter: blur(.12px);
-        text-shadow: 0 0 25px #0a7b9e;
+        text-shadow: 0 0 25px #3fff04;
     }
     5%,95% {
-        color: rgb(20, 238, 136);
-        text-shadow: 0 0 5px #0f997b;
+        color: rgb(30, 255, 0);
+        text-shadow: 0 0 5px #24f875;
     }
 }
 
