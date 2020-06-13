@@ -28,7 +28,7 @@ body {
 }
 
 #particle-js {
-    height: fit-content;
+    height: 100%;
     z-index: 0;
     background: #262626;   
 }
@@ -99,14 +99,13 @@ h1 span:nth-child(9){
 
 /* Social Network Connect */
 .socialNav {
-    position: absolute;
-    margin: 0;
-    padding: 0;
-    top: 10%;
-    left: 10%;
+    position: relative;
+    margin-top: 5%;
+    margin-left: 46%;
+    transform: translate(-50%, -50%);
     display: flex;
     flex-direction: row;
-    padding: 0;
+
 }
 .socialNav .fa {
     font-size: 20px;
@@ -163,6 +162,7 @@ a::before {
         left: -2px;
         top:-2px;
         color: #720bf8;
+        color: #11adad;
     }
     25% {
         left: 2px;
