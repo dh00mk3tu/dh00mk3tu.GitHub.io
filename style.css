@@ -1,6 +1,18 @@
-@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@1,800&display=swap');
 
-@import url('https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap');
+@font-face{
+    src: url(Fonts/neon_future.ttf);
+    font-size: 30px;
+    font-family: homePage;
+}
+@font-face{
+    src: url(Fonts/earthorbiter.ttf);
+    font-family: headings;
+}
+@font-face{
+    src: url(Fonts/Square.ttf);
+    font-family: heading2;
+}
+
 
 * {
     margin: 0;
@@ -22,7 +34,7 @@ body {
 }
 
 header {
-    font-family: 'Press Start 2P', cursive;
+    font-family: 'headings';
     color: #fff;
     display:flex;
     position: relative;
@@ -31,13 +43,12 @@ header {
     padding-top: 30px;
     margin-top:10px;
     padding-left: 15px;
-    
     letter-spacing: 15px;
     white-space: nowrap;   
 }
 h1 {
     color: #fff;
-    font-size:18px;
+    font-size:28px;
 }
 
 h1 span {
@@ -86,80 +97,96 @@ h1 span:nth-child(9){
     }
 }
 
-ul{
-    z-index: 1;
-    font-family: 'Poppins', sans-serif;
-    position: relative;
-    top: 30px;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-;
-}
-
-ul li {
-    list-style: none;
-    
-}
-ul li:before {
-    content:attr(data-text);
+/* Social Network Connect */
+.socialNav {
     position: absolute;
-    top:60%;
-    left: 53%;
-    transform: translate(-50%, -50%);
-    color: #fff;
-    font-size: 2em;
-    font-weight:700;
-    pointer-events: none;
-    opacity: 0;
-    letter-spacing: 20px;
-    transition: 0.5s;
-    white-space: nowrap;
+    margin: 0;
+    padding: 0;
+    top: 10%;
+    left: 10%;
+    display: flex;
+    flex-direction: row;
+    padding: 0;
 }
-ul li:hover:before {
-    opacity: 0.2;
-    letter-spacing: 30px;
+.socialNav .fa {
+    font-size: 20px;
+    letter-spacing: 0px;
+    color: rgb(197, 246, 231);
+    /* animation: textGlow 3s infinite; */
+    justify-content: center;
+    border-radius: 30%;
 }
 
-ul li a {
-    position: relative;
-    display: inline-block;
-    padding: 30px 15px;
-    text-decoration: none;
-    background: #1b9786;
-    color: #fff;
-    text-transform: uppercase;
-    letter-spacing: 2px;
-    overflow: hidden;
+/* Button Animation */
+.navi {
+    position: absolute;
+    display: flex;
+    min-height: 100vh;
+    flex-direction: column;
+    padding-top: 20%;
+    margin-left: 120px;
+    padding-bottom: 50px;
     
-    transition: 0.5s;
-    z-index: 1;
-}
-ul:hover li a {
-    opacity: 0;
 }
 
-ul li a:hover {
-    transform: scale(1.3);
-    z-index: 1000;
-    background: #df2e77;
-    opacity: 1;
-}
+a {
+    transform: translate(-50%, 50%);
+    padding: 15px 30px;
+    margin-bottom: 5%;
+    color: #2196f3;
+    font-family: heading2;
+    font-size: 24px;
+    text-decoration: none;
+    text-transform: uppercase;
+    overflow: hidden;
+    transition: 0.2s;
+    letter-spacing: 4px;
 
-ul li a:before {
-    content:'';
-    position:absolute;
+}
+a::before, a::after {
+    content: attr(data-text);
+    position: absolute;
+    margin-top: 15px;
+    margin-left: 30px;
     top: 0;
-    left: -120px;
-    width: 80px;
+    left: 0;
+    width: 100%;
     height: 100%;
-    background: linear-gradient(90deg, transparent, rgba(255, 255, 255,0.8), transparent);
-    transform: skewX(35deg);
-    transition: 0s;
 }
 
-ul li a:hover:before {
-    left: calc(100% + 100px);
-    transition: 0.5s;
+a::before {
+    color: #900190;
+    animation: glitch-effect 3s infinite;
 }
+@keyframes glitch-effect {
+    0% {
+        left: -2px;
+        top:-2px;
+        color: #720bf8;
+    }
+    25% {
+        left: 2px;
+        top: 0px;
+    }
+    50% {
+        left: -1px;
+        top: 2px;
+    }
+    75% {
+        right: 1px;
+        top: -1px;
+    }
+    100% {
+        left: 0px;
+        top:-2px;
+    }
+}
+a:hover {
+    color: #255784;
+    background: #2196f3;
+    box-shadow: 0 0 10px #2196f3,
+    0 0 40px #2196f3,
+    0 0 80px #2196f3;
+    transition-delay: 0.2s;
+ }
+
