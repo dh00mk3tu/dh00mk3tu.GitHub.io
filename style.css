@@ -12,11 +12,24 @@
     src: url(Fonts/Square.ttf);
     font-family: heading2;
 }
+@font-face{
+    src: url(Fonts/whitrabt.ttf);
+    font-family: content;
+}
 
 
 * {
     margin: 0;
     padding: 0;
+    animation: transitionIN 0.75s;
+}
+.contentBox {
+    padding: 10%;
+}
+p {
+    font-family:'content';
+    font-size: 24px;
+    color: #fff;
 }
 
 .wrapper {
@@ -28,7 +41,7 @@ body {
 }
 
 #particle-js {
-    height: 100%;
+    min-height: 100%;
     z-index: 0;
     background: #262626;   
 }
@@ -44,7 +57,7 @@ header {
     margin-top:10px;
     padding-left: 15px;
     letter-spacing: 15px;
-    white-space: nowrap;   
+    white-space: nowrap;  
 }
 h1 {
     color: #fff;
@@ -100,19 +113,21 @@ h1 span:nth-child(9){
 /* Social Network Connect */
 .socialNav {
     position: relative;
-    margin-top: 5%;
-    margin-left: 46%;
-    transform: translate(-50%, -50%);
+    margin-left: 9vh;
+    top: 0;
+    right: 0;
+    padding-bottom: 40%;
     display: flex;
     flex-direction: row;
+    padding-top: 0;
 
 }
 .socialNav .fa {
+    position: relative;
     font-size: 20px;
     letter-spacing: 0px;
     color: rgb(197, 246, 231);
     /* animation: textGlow 3s infinite; */
-    justify-content: center;
     border-radius: 30%;
 }
 
@@ -162,7 +177,6 @@ a::before {
         left: -2px;
         top:-2px;
         color: #720bf8;
-        color: #11adad;
     }
     25% {
         left: 2px;
@@ -190,3 +204,18 @@ a:hover {
     transition-delay: 0.2s;
  }
 
+ /* Content Font */
+
+
+/* Page Transition  */
+
+@keyframes transitionIN {
+    from {
+        opacity: 0;
+        transform: rotateX(-10deg);
+    }
+    to {
+        opacity: 1;
+        transform: rotateX(0);
+    }
+}
