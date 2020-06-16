@@ -269,9 +269,14 @@ a:hover {
     width: 30px;
     color: #fff;
     position: fixed;
-    bottom: 6%;
+    bottom: 6.5%;
     z-index: 1000;
     margin-left: 93%;       
+}
+
+#BackToTop fa {
+    position: absolute;
+    padding-left: 10%;    
 }
 
 #footer {
@@ -292,6 +297,6 @@ a:hover {
     position: relative;
     justify-content: center;
     align-items: center;
-
+    margin-left: 5.5%;
     /* padding-left: 7.5%; */
 }
