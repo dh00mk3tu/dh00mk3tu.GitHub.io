@@ -269,7 +269,29 @@ a:hover {
     width: 30px;
     color: #fff;
     position: fixed;
-    bottom: 5%;
+    bottom: 6%;
     z-index: 1000;
     margin-left: 93%;       
+}
+
+#footer {
+    font-family: 'text';
+    width: 100%;
+    position: fixed;
+    bottom: 0;
+    background: #53112d;
+    justify-content: center;
+    align-items: center;
+    box-shadow: -2px -2px 4px 0 rgba(0, 0, 0, 0.2);
+}
+
+#footer p {
+    font-family:'text';
+    font-size: 18px;
+    padding: 2%;
+    position: relative;
+    justify-content: center;
+    align-items: center;
+
+    /* padding-left: 7.5%; */
 }
