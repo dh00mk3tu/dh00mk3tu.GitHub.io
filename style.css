@@ -229,10 +229,14 @@ a:hover {
 }
 #about {
     position: absolute;
+    text-transform: uppercase;
     margin-top: 145%;
     padding: 5%;
+    letter-spacing:2px;
 }
-#content p{
+#content p {
+    text-transform: none;
+    letter-spacing: 0px;
     padding-left:5%;
     font-family:'text';
     font-size: 20px;
@@ -280,6 +284,7 @@ a:hover {
 }
 
 #footer {
+    z-index: 1000;
     font-family: 'text';
     width: 100%;
     position: fixed;
@@ -292,11 +297,79 @@ a:hover {
 
 #footer p {
     font-family:'text';
-    font-size: 16px;
+    font-size: 13px;
     padding: 2%;
     position: relative;
-    justify-content: center;
-    align-items: center;
-    margin-left: 10.5%;
+    /* justify-content: center;
+    align-items: center; */
+    margin-left: 17%;
     /* padding-left: 7.5%; */
+}
+/* Project Section CSS */
+#projects {
+    position: absolute;
+    margin-top: 720%;
+    padding: 5%;
+    letter-spacing:1px;
+    padding-bottom: 50px;
+}
+
+#projects h2 {
+    text-transform: uppercase;
+    font-family:'text';
+    color: #fff;
+    padding: 5%;  
+    letter-spacing:2px; 
+}
+
+#projects p{
+    letter-spacing:0px;
+    padding-left:5%;
+    font-family:'text';
+    font-size: 20px;
+    color: #fff;
+    padding-right: 5%;
+    padding-bottom: 20%;
+}
+
+/* Project 1 - Project AnYa */
+#projectAnya {
+    position: relative;
+    padding: 2%;
+}
+
+#projectAnya #anyaDetails {
+    background-image: linear-gradient(to bottom right, rgb(175, 88, 175), rgb(83, 26, 71));
+    border-radius:10px;
+    box-shadow: 0 3px 5px 0 rgba(0,0,0,1);
+    padding: 2%;
+}
+
+#projectAnya #anyaDetails h2 {
+    margin-top: 4%;
+    position: relative;
+    float: left;
+}
+
+#projectAnya #anyaDetails img {
+    background: none;
+    /* box-shadow: none; */
+    border: none;
+    margin-top: 10%;
+    height: 100px;
+    width: 100px;
+}
+
+#projectAnya #anyaDetails p{
+    font-size: 16px;
+    padding:4%;
+    word-wrap: normal;
+}
+
+#projectAnya #anyaDetails a {
+    animation: none;
+}
+#projectAnya #anyaDetails a:hover {
+    animation: none;
+    box-shadow:none;
 }
