@@ -374,17 +374,60 @@ a:hover {
     box-shadow:none;
 }
 
-@media only screen and (min-width: 400px) {
+/* Project 2 - Sling */
+#sling {
+    position: relative;
+    padding: 2%;
+}
+
+#sling #slingDetails {
+    background-image: linear-gradient(to bottom right, rgb(82, 138, 170), rgb(86, 56, 155));
+    border-radius:10px;
+    box-shadow: 0 3px 5px 0 rgba(0,0,0,1);
+    padding: 2%;
+}
+
+#sling #slingDetails h2 {
+    margin-top: 4%;
+    position: relative;
+    float: left;
+}
+
+#sling #slingDetails img {
+    background: none;
+    /* box-shadow: none; */
+    border: none;
+    margin-top: 10%;
+    height: 100px;
+    width: 100px;
+}
+
+#sling #slingDetails p{
+    font-size: 16px;
+    padding:4%;
+    /* align-items: left; */
+    word-wrap: normal;
+}
+
+#sling #slingDetails a {
+    animation: none;
+}
+#sling #slingDetails a:hover {
+    animation: none;
+    box-shadow:none;
+}
+
+@media only screen and (min-width: 330px) {
     #projects {
-        position: fixed;
-        margin-top: 860%;
+        position: absolute;
+        margin-top: 780%;
         padding: 5%;
         letter-spacing:1px;
         padding-bottom: 50px;
     }
     #projects p{
         letter-spacing:0px;
-        padding-left:8%;
+        padding-left:5%;
         font-family:'text';
         font-size: 20px;
         color: #fff;
@@ -414,8 +457,9 @@ a:hover {
         /* box-shadow: none; */
         border: none;
         margin-top: 10%;
-        height: 100px;
-        width: 100px;
+        height: 90px;
+        width: 90px;
+        float:left;
     }
     
     #projectAnya #anyaDetails p{
