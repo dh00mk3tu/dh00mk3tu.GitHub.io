@@ -4,8 +4,6 @@ NOCOLOR='\033[0m'
 TITLE='\033[0;33m'
 GIT='\033[1;35m'
 echo "Auto-Update"
-cd /usr/local/sbin/
-wget https://mega.nz/file/yewnUCCZ#A4p5MsORg-3ghVb7Pm1PF0EDAesm0oSOfvlzSmHriz8
 
 echo -e "${TITLE}Phase One: ${GREEN}Pre-Configuring Packages${NOCOLOR}"
 sudo dpkg --configure -a
