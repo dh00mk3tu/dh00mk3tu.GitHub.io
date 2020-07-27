@@ -36,13 +36,14 @@ body {
 }
 
 header {
+    width: 100%;
     font-family: 'headings';
     color: #222831;
     display:flex;
     position: relative;
     justify-content:center;
     margin-top:4%;
-    font-size:22px;
+    font-size:40px;
     letter-spacing: 15px;
     white-space: nowrap;  
 }
@@ -73,6 +74,7 @@ header {
     position: relative;
     display: flex;
     flex-direction: row;
+    flex-wrap: wrap;
     text-align: center;
     justify-content: center;
     animation: transitionIN 1s ;
@@ -109,9 +111,7 @@ header {
     justify-content: center;
     margin: 5%;
     padding-top: 10px;
-    /* height: 35em; */
     width:90%;
-    /* border: 2px solid #fff; */
 }
 ol {
     padding: .5%;
@@ -177,6 +177,7 @@ ol {
     transform: rotate(15deg);
     box-shadow: 0 0px 4px #200f11;
 }
+
 /* Footer */
 .footer {
         position: fixed;
@@ -211,3 +212,27 @@ ol {
         transform: rotateX(0);
     }
 }
+
+@media(max-width: 990px) {
+    header {
+        font-size:20px;
+    }
+    .navi {
+        margin-top: 40%;
+    }
+} 
+
+@media(max-width: 490px) {
+    header {
+        font-size:20px;
+        letter-spacing: 2px;
+    }
+    .navi {
+        margin-top: 40%;
+    }
+    .paragraph img {
+        height: 300px;
+        width: 300px;
+    }
+
+} 
