@@ -13,12 +13,13 @@
     font-family: heading2;
 }
 @font-face{
-    src: url(Fonts/CaviarDreams.ttf);
+    src: url(Fonts/Aaargh.ttf);
     font-family: text;
 }
 
 html {
     scroll-behavior: smooth;
+    height: 100vh;
 }
 * {
     margin: 0;
@@ -28,129 +29,59 @@ html {
 .contentBox {
     padding: 10%;
 }
-p {
-    font-family:'content';
-    font-size: 24px;
-    color: #fff;
-}
 
-.wrapper {
-    width: 100%;
-}
 
 body {
-    background:#0d0f1b;
-}
-
-#particle-js {
-    min-height: 100%;
-    z-index: 0;
-    background: #262626;   
+    background:#f5f5f5;
 }
 
 header {
     font-family: 'headings';
-    color: #fff;
+    color: #222831;
     display:flex;
     position: relative;
-    align-items: center;
-    justify-content: center;
-    padding-top: 30px;
-    margin-top:10px;
-    padding-left: 15px;
+    justify-content:center;
+    margin-top:4%;
+    font-size:22px;
     letter-spacing: 15px;
     white-space: nowrap;  
 }
-h1 {
-    color: #fff;
-    font-size:28px;
-}
 
-h1 span {
-    display: table-cell;
-    animation: textGlow 8s linear infinite;
-    animation-iteration-count: infinite;
-}
-h1 span:nth-child(1){
-    animation-delay: 0s;
-}
-h1 span:nth-child(2){
-    animation-delay: .5s;
-}
-h1 span:nth-child(3){
-    animation-delay: 1s;
-}
-h1 span:nth-child(4){
-    animation-delay: 1.5s;
-}
-h1 span:nth-child(5){
-    animation-delay: 2s;;
-}
-h1 span:nth-child(6){
-    animation-delay: 2.5s;
-}
-h1 span:nth-child(7){
-    animation-delay: 3s;
-}
-h1 span:nth-child(8){
-    animation-delay: 3.5s;
-}
-h1 span:nth-child(9){
-    animation-delay: 4s;
-}
-
-
-@keyframes textGlow {
-    0%,100% {
-        color: #fff;
-        filter: blur(.12px);
-        text-shadow: 0 0 25px #3fff04;
-    }
-    5%,95% {
-        color: rgb(30, 255, 0);
-        text-shadow: 0 0 5px #24f875;
-    }
-}
 
 /* Social Network Connect */
 .socialNav {
-    position: relative;
-    margin-left: 9vh;
-    top: 0;
-    right: 0;
-    /* padding-bottom: 40%; */
+    justify-content:center;
+    margin-top: 2em;
     display: flex;
     flex-direction: row;
-    padding-top: 0;
 
 }
 .socialNav .fa {
     justify-content: center;
-    position: relative;
-    font-size: 20px;
+    font-size: 25px;
     letter-spacing: 4px;
-    color: rgb(197, 246, 231);
-    /* animation: textGlow 3s infinite; */
+    color: #222831;
     border-radius: 30%;
 }
-
-/* Button Animation */
-.navi {
-    position: absolute;
-    display: flex;
-    min-height: 100vh;
-    flex-direction: column;
-    padding-top: 20%;
-    margin-left: 120px;
-    padding-bottom: 50px;
-    
+.socialNav a .fa:hover {
+    color: #e0dede;
 }
 
+/* Navigation Bar */
+.navi {
+    margin-top: 15%;
+    position: relative;
+    display: flex;
+    flex-direction: row;
+    text-align: center;
+    justify-content: center;
+    animation: transitionIN 1s ;
+}
+
+/* General */
 a {
-    transform: translate(-50%, 50%);
     padding: 15px 30px;
-    margin-bottom: 5%;
-    color: #2196f3;
+    color: #222831;
     font-family: heading2;
     font-size: 24px;
     text-decoration: none;
@@ -160,55 +91,81 @@ a {
     letter-spacing: 4px;
 
 }
-a::before, a::after {
-    content: attr(data-text);
-    position: absolute;
-    margin-top: 15px;
-    margin-left: 30px;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-}
-
-a::before {
-    color: #900190;
-    animation: glitch-effect 3s infinite;
-}
-@keyframes glitch-effect {
-    0% {
-        left: -2px;
-        top:-2px;
-        color: #720bf8;
-    }
-    25% {
-        left: 2px;
-        top: 0px;
-    }
-    50% {
-        left: -1px;
-        top: 2px;
-    }
-    75% {
-        right: 1px;
-        top: -1px;
-        color: #e20707;
-    }
-    100% {
-        left: 0px;
-        top:-2px;
-    }
-}
 a:hover {
-    color: #255784;
-    background: #2196f3;
-    box-shadow: 0 0 10px #2196f3,
-    0 0 40px #2196f3,
-    0 0 80px #2196f3;
+    color: #ffffff;
+    background: #221f3b;
+    box-shadow: 0 0 5px #ffa5b0,
+    0 0 20px #ffa5b0,
+    0 0 40px #ffa5b0;
     transition-delay: 0.2s;
-    border-radius: 10px;
+    border-radius: 3px;
  }
 
+.navContainer {
+    border-radius: 20px;
+    background-color: #e0dede;
+    display: none;
+    display: flex;
+    justify-content: center;
+    margin: 5%;
+    padding-top: 10px;
+    /* height: 35em; */
+    width:90%;
+    /* border: 2px solid #fff; */
+}
+ol {
+    padding: .5%;
+}
+.navContainer .content {
+    padding: 5%;
+    display: flex;
+    flex-direction: column; 
+    text-align: center;
+    font-family: 'text';
+    /* position: fixed; */
+    color: #222831;
+    width: 100%;
+ 
+}
+
+.title {
+    letter-spacing: 4px;
+    font-size: 45px;
+}
+
+.paragraph {
+    margin-top: 2em;
+    font-size: 20px;
+    font-family: 'text';
+    color: #221f3b;
+    word-wrap: break-word;
+    padding: 10px;
+}
+
+.paragraph h2 {
+    text-transform: uppercase;
+    letter-spacing: 5px;
+}
+/* Footer */
+.footer {
+        position: fixed;
+        left: 0;
+        bottom: 0;
+        width: 100%;
+        background-color: #6a197d;
+        color: white;
+        text-align: center;
+        height: 40px;
+        animation: transitionIN 2s ease-in-out;
+    /* box-shadow: -2px -2px 4px 0 rgba(0, 0, 0, 0.2); */
+}
+
+.footer p {
+    font-family:'text';
+    font-size: 16px;
+    padding-top: 10px;
+    position: relative;
+}
 
 
 /* Page Transition  */
@@ -221,254 +178,5 @@ a:hover {
     to {
         opacity: 1;
         transform: rotateX(0);
-    }
-}
-#content {
-    border-radius: 10px;
-    background: #161a2e;
-}
-#about {
-    position: absolute;
-    text-transform: uppercase;
-    margin-top: 145%;
-    padding: 5%;
-    letter-spacing:2px;
-}
-#content p {
-    text-transform: none;
-    letter-spacing: 0px;
-    padding-left:5%;
-    font-family:'text';
-    font-size: 20px;
-    color: #fff;
-    padding-right: 5%;
-    padding-bottom: 10%;
-}
-
-#content h2 {
-    font-family:'text';
-    color: #fff;
-    padding: 5%;   
-}
-
-#content img {
-    border-radius: 15px;
-    position: relative;
-    float: right;
-    padding: 2%;
-    border: none;
-    box-shadow: 0 2px 3px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
-}
-
-#content #cpp {
-    float: none;
-    justify-content: center;
-}
-
-#BackToTop {
-    background: #376894;
-    height: 20px;
-    font-size: 18px;
-    border-radius: 20px;
-    width: 30px;
-    color: #fff;
-    position: fixed;
-    bottom: 6.5%;
-    z-index: 1000;
-    margin-left: 93%;       
-}
-
-#BackToTop fa {
-    position: absolute;
-    padding-left: 10%;    
-}
-
-#footer {
-    z-index: 1000;
-    font-family: 'text';
-    width: 100%;
-    position: fixed;
-    bottom: 0;
-    background: #53112d;
-    justify-content: center;
-    align-items: center;
-    box-shadow: -2px -2px 4px 0 rgba(0, 0, 0, 0.2);
-}
-
-#footer p {
-    font-family:'text';
-    font-size: 13px;
-    padding: 2%;
-    position: relative;
-    /* justify-content: center;
-    align-items: center; */
-    margin-left: 17%;
-    /* padding-left: 7.5%; */
-}
-/* Project Section CSS */
-#projects {
-    position: absolute;
-    margin-top: 720%;
-    padding: 5%;
-    letter-spacing:1px;
-    padding-bottom: 50px;
-}
-
-#projects h2 {
-    text-transform: uppercase;
-    font-family:'text';
-    color: #fff;
-    padding: 5%;  
-    letter-spacing:2px; 
-}
-
-#projects p{
-    letter-spacing:0px;
-    padding-left:5%;
-    font-family:'text';
-    font-size: 20px;
-    color: #fff;
-    padding-right: 5%;
-    padding-bottom: 20%;
-}
-
-/* Project 1 - Project AnYa */
-#projectAnya {
-    position: relative;
-    padding: 2%;
-}
-
-#projectAnya #anyaDetails {
-    background-image: linear-gradient(to bottom right, rgb(175, 88, 175), rgb(83, 26, 71));
-    border-radius:10px;
-    box-shadow: 0 3px 5px 0 rgba(0,0,0,1);
-    padding: 2%;
-}
-
-#projectAnya #anyaDetails h2 {
-    margin-top: 4%;
-    position: relative;
-    float: left;
-}
-
-#projectAnya #anyaDetails img {
-    background: none;
-    /* box-shadow: none; */
-    border: none;
-    margin-top: 10%;
-    height: 100px;
-    width: 100px;
-}
-
-#projectAnya #anyaDetails p{
-    font-size: 16px;
-    padding:4%;
-    word-wrap: normal;
-}
-
-#projectAnya #anyaDetails a {
-    animation: none;
-}
-#projectAnya #anyaDetails a:hover {
-    animation: none;
-    box-shadow:none;
-}
-
-/* Project 2 - Sling */
-#sling {
-    position: relative;
-    padding: 2%;
-}
-
-#sling #slingDetails {
-    background-image: linear-gradient(to bottom right, rgb(82, 138, 170), rgb(86, 56, 155));
-    border-radius:10px;
-    box-shadow: 0 3px 5px 0 rgba(0,0,0,1);
-    padding: 2%;
-}
-
-#sling #slingDetails h2 {
-    margin-top: 4%;
-    position: relative;
-    float: left;
-}
-
-#sling #slingDetails img {
-    background: none;
-    /* box-shadow: none; */
-    border: none;
-    margin-top: 10%;
-    height: 100px;
-    width: 100px;
-}
-
-#sling #slingDetails p{
-    font-size: 16px;
-    padding:4%;
-    /* align-items: left; */
-    word-wrap: normal;
-}
-
-#sling #slingDetails a {
-    animation: none;
-}
-#sling #slingDetails a:hover {
-    animation: none;
-    box-shadow:none;
-}
-
-@media only screen and (min-width: 330px) {
-    #projects {
-        position: absolute;
-        margin-top: 780%;
-        padding: 5%;
-        letter-spacing:1px;
-        padding-bottom: 50px;
-    }
-    #projects p{
-        letter-spacing:0px;
-        padding-left:5%;
-        font-family:'text';
-        font-size: 20px;
-        color: #fff;
-        padding-right: 5%;
-        padding-bottom: 20%;
-    }
-    #projectAnya {
-        position: relative;
-        padding: 2%;
-    }
-    
-    #projectAnya #anyaDetails {
-        background-image: linear-gradient(to bottom right, rgb(175, 88, 175), rgb(83, 26, 71));
-        border-radius:10px;
-        box-shadow: 0 3px 5px 0 rgba(0,0,0,1);
-        padding: 2%;
-    }
-    
-    #projectAnya #anyaDetails h2 {
-        margin-top: 4%;
-        position: relative;
-        float: left;
-    }
-    
-    #projectAnya #anyaDetails img {
-        background: none;
-        /* box-shadow: none; */
-        border: none;
-        margin-top: 10%;
-        height: 90px;
-        width: 90px;
-        float:left;
-    }
-    
-    #projectAnya #anyaDetails p{
-        font-size: 16px;
-        padding:4%;
-        word-wrap: normal;
-    }
-    
-    #projectAnya #anyaDetails a {
-        animation: none;
     }
 }

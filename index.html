@@ -7,44 +7,53 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <link rel="shortcut icon" href="/Img/ico.ico" type="image/x-icon">
     <link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
     <title>Anirudh Rath | dh00mk3tu</title>
+
+    <script>
+        $(document).ready(function(){
+             $(".aboutClick").click(function(){
+                $(".aboutme").toggle();
+                $(".projects").hide(600);
+                $(".contact").hide(600);
+                $(".achievements").hide(600);
+            });
+        });
+        $(document).ready(function(){
+             $(".projectsClick").click(function(){
+                $(".projects").toggle();
+                $(".aboutme").hide(600);
+                $(".contact").hide(600);
+                $(".achievements").hide(600)
+            });
+        });
+        $(document).ready(function(){
+             $(".contactClick").click(function(){
+                $(".projects").hide(600);
+                $(".aboutme").hide(600);
+                $(".contact").toggle();
+                $(".achievements").hide(600)
+            });
+        });
+        $(document).ready(function(){
+             $(".achievementsClick").click(function(){
+                $(".projects").hide(600);
+                $(".aboutme").hide(600);
+                $(".contact").hide(600);
+                $(".achievements").toggle(600)
+            });
+        });
+    </script>
 </head>
 <body>
-   
-    
-    <script src="https://cdn.jsdelivr.net/npm/particles.js@2.0.0/particles.min.js">
-      
-    </script>
-    <div id="particles-js">
-        <div class="wrapper">
-            <a href="#navi" id=BackToTop><i class="fa fa-chevron-up" aria-hidden="true"></i></a>
+    <div class="wrapper">
+            
             <header>
                 <h1>
-                    <span>d</span>
-                    <span>h</span>
-                    <span>0</span>
-                    <span>0</span>
-                    <span>m</span>
-                    <span>k</span>
-                    <span>3</span>
-                    <span>t</span>
-                    <span>u</span>
-                </h1>                
+                    Anirudh Rath | dh00mk3tu
+                </h1>                 
             </header>
-        <div class="navi" id=navi>
-                <a href="#about" data-text="About Me">
-                    About Me
-                </a>
-                <a href="#projects" data-text="Projects">
-                    Projects
-                </a>
-                <a href="#" data-text="Contact">
-                    Contact
-                </a>
-                <a href="#" data-text="Achievements">
-                    Achievements
-                </a>
-        </div>
+        
         <div class="socialNav">
             <a href="https://github.com/dh00mk3tu"><i class="fa fa-github"></i></a>
             <a href="https://twitter.com/dh00mk3tu"><i class="fa fa-twitter"></i></a>
@@ -52,116 +61,119 @@
             <a href="https://www.facebook.com/dh00mk3tu"><i class="fa fa-facebook"></i></a>
             <a href="https://in.linkedin.com/in/dh00mk3tu"><i class="fa fa-linkedin"></i></a>
         </div>
+
+        <div class="navi" >
+            <a href="#aboutme" class="aboutClick"  data-text="About Me">
+                About Me
+            </a>
+            <a href="#aboutme" class="projectsClick" data-text="Projects">
+                Projects
+            </a>
+            <a href="#" data-text="Contact">
+                Contact
+            </a>
+            <a href="#" data-text="Achievements">
+                Achievements
+            </a>
+        </div>
         
-        <div id=about>
-            <div id=content>
-                <h2>
-                    About Me
-                </h2>
-                <img src="/Img/PFP1.jpg" alt="Anirudh Rath | dh00mk3tu" width="160" height="160">
-                <p>
-                    Greetings, my name is Anirudh Rath.
-                    <br><br>
-                    First of all I'd like to thank you for paying a visit here. I'm grateful. 
-                    <br><br>
-                    <b>
-                        Who am I?
-                    </b>
-                    <br><br>
-                    <i>An Artist. An Engineer</i>
-                    <br><br>
-                    I'm a Computer Science Engineering undergraduate student, pursuing my B.Tech from
-                    JIMS, Greater Noida, GGSIPU University. 
-                    <br><br>
-                    Experienced, with a demonstrated history of working in the computer software industry. 
-                    <br>
-                    Exemplary performance in Animation & Graphic Designing with Industry Experience.
-                    <br><br>
-                    <img id=cpp src="/Img/pfp3.jpg" alt="Anirudh Rath | dh00mk3tu" width="323" height="210">
-                    <br><br>
-                    Skilled in Java but my forte remains to be C/C++. Industrial experience with Python in Developing Websites, Automation systems & for Database manipulation.  
-                    <br><br>    
-                    Front-end Development with HTML5, CSS, JavaScript and Angular Framework. I also have experience with modern web designer applications like DreamWeaver.
-                    <br>
-                    I have decent experience with PHP to add to my arsenal as well. 
-                    Alongside the above mentioned skills and interests I have decent amount of experience in Video Game Development with industry experience on modern Engines Unity & Unreal.
-                    <br><br>
-                    I've been decorated with the Best Research Paper Award at ICRAMSTEL 2019 for my work on a Personal Project titled "Project AnYa"; An AI/ML System Automation Project, I started working on in 11th Grade.
-                    <br><br>
-                    Strong arts and design professional,  
-                    with a Passion for Art, Pop Science, Music and Literature. 
-                    I'm an artist, I draw and paint in a variety of styles but amongst all my favorite remains to be Monochrome Oil Paintings.
-                    <br><br>
-                    <img id=cpp src="/Img/pfp2.jpg" alt="Anirudh Rath | dh00mk3tu" width="323" height="325">
-                    <br><br>
-                    I write Stories, Proses and Haikus to express my emotions and perspective towards the Human Psychology and Humanity.
-                    <br><br>
-                    I follow two rules in particular in my life,  
-                    <br><i>The Law Of Attraction</i>
-                    and, <br>
-                    <i>Peace. Love. Unity. Respect</i>
-                </p>
+        <div class="aboutme navContainer" id="aboutme" style="display: none;">
+            <div class="content">
+                <div class="title">
+                    Anirudh Rath
+                </div>
+                <br><br>
+                <div class="paragraph">
+                    <p>
+                        Greetings, my name is Anirudh Rath.
+                        <br><br>
+                        First of all I'd like to thank you for paying a visit here. I'm grateful. 
+                        <br><br>
+                        <b>
+                            Who am I?
+                        </b>
+                        <br><br>
+                        <i>An Artist. An Engineer</i>
+                        <br><br>
+                        I'm a Computer Science Engineering undergraduate student. 
+                        <!-- <img id=cpp src="/Img/pfp3.jpg" alt="Anirudh Rath | dh00mk3tu"> -->
+                        <br><br>
+                        <h2><b>Technologies & Frameworks</b></h2>
+                        <ul>
+                            <ol>C/C++ Advanced</ol>
+                            <ol>Python Advanced</ol>
+                            <ol>PHP & Plain JavaScript</ol>
+                            <ol>Angular</ol>
+                            <ol>React</ol>
+                            <ol>Advanced CSS & Bootstrap</ol>
+                            <ol>Unity Game Engine</ol>
+                            </ul>
+                        <br>
+                        <h2><b>Curently Working On</b></h2>
+                        <ul>
+                            <ol>Angular Project With A Startup</ol>
+                            <ol>Paint Application in C++</ol>
+                            <ol>Custom JavaScript UI library</ol>
+                            <ol>Custom Encryption Algorithm</ol>
+                            <ol>Windows Customization & Altering Applications With Multiple Languages</ol>
+                            </ul>
+                        <br>
+                        <h2><b>Currently Learning</b></h2>
+                        <ul>
+                            <ol>React & Redux</ol>
+                            <ol>Angular</ol>
+                            <ol>Encryption & Cryptography AlAlgorithms</ol>
+                            </ul>
+                        <br>
+                        <h2><b>Desktop Specs</b></h2>
+                            <ul>
+                                <ol>Motherboard: B450 Gaming Plus M.2</ol>
+                                <ol>CPU: R5 2600X</ol>
+                                <ol>RAM: Corsair Vengeance 8GB @ 3000 Mhz * 2</ol>
+                                <ol>GPU: GTX 1660 8GB</ol>
+                                <ul>Storage:
+                                    <li>1TB WD Blue</li>
+                                    <li>750 GB WD Blue</li>
+                                    <li>500 GB WD Blue</li>
+                                    <li>250 GB SATA SSD Kingston</li>
+                                    <li>250 GB M.2 SSD WD Green</li>
+                                </ul>
+                                <ol>PSU: Corsair VS550</ol>
+                                <ol>Cabinet: Antec DF500 </ol>
+                                <ol>Multimedia System: F&D F210X</ol>
+                            </ul>
+                                          
+                        <br><br>
+                        Strong arts and design professional,  
+                        with a Passion for Art, Pop Science, Music and Literature. 
+                        I'm an artist, I draw and paint in a variety of styles but amongst all my favorite remains to be Monochrome Oil Paintings.
+                        <br><br>
+                        <img id=cpp src="/Img/pfp2.jpg" alt="Anirudh Rath | dh00mk3tu" width="600" height="600">
+                        <br><br>
+                        I write Stories, Proses and Haikus to express my emotions and perspective towards the Human Psychology and Humanity.
+                        <br><br>
+                        I follow two rules in particular in my life,  
+                        <br><i>The Law Of Attraction</i>
+                        and, <br>
+                        <i>Peace. Love. Unity. Respect</i>
+                    </p>
+                </div>    
+            </div>
+        </div>
+        <div class="projects navContainer" id="projects" style="display: none;">
+            <div class="content">
+                <div class="title">
+                    Projects
+                </div>
+                
             </div>
         </div>
 
-        <div id=projects>
-            <div id=content>
-                <h2>
-                    Projects
-                </h2>
-                <p>
-                    I'm a keen learner. <br>
-                    I aspire to grow and adapt to new changes and trends; & to achieve this I keep working on new technologies and practcing the one's I have already learnt.
-                    <br><br>
-                    My projects are my attempts to practically render what I have learnt. I keep upgrading and updating my projects over time.
-                    <br><br>
-                    Below you'll find my Projects, with all the relevant information you'll need, external links etc.    
-                </p>
-                <!-- Project AnYa -->
-                <div id="projectAnya">
-                    <div id="anyaDetails">
-                        <h2>Project AnYa</h2>
-                        
-                            <img src="/Img/anyaLogo.png" alt="Project AnYa Logo">
-                            <br><br><br>
-                            <p>
-                                An award winning AI powered System Automation Tool.
-                                <br><br>
-                                Click to know more!
-                            </p> 
-                    </div>
-                </div>
-                <!-- Sling -->
-                <div id="sling">
-                    <div id="slingDetails">
-                        <h2>Sling</h2>
-                        
-                            <img src="/Img/slingLogo.png" alt="Project AnYa Logo">
-                            <br><br><br>
-                            <p>
-                                An undectable Malware written in C
-                                <br><br>
-                                Click to know more!
-                            </p> 
-                    </div>
-                </div>
-            </div>        
-        </div>
-
-
-        <div id="footer">
+        <div class="footer">
             <p>
                 Made With <i class="fa fa-heart" aria-hidden="true"></i> By Anirudh Rath | dh00mk3tu
             </p>
-            
-        </div>  
+        </div> 
     </div>
-
-
-    <script>
-        particlesJS.load('particles-js', 'particles.json', function(){
-            console.log('particles.json loaded');
-        });
-    </script>
 </body>
 </html>
