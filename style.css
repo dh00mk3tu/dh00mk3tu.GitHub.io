@@ -222,6 +222,20 @@ ol {
     }
 } 
 
+@media(max-width: 600px) {
+    header {
+        font-size:30px;
+        letter-spacing:5px;
+    }
+    .navi {
+        margin-top: 40%;
+    }
+    .paragraph img {
+        height: 300px;
+        width: 300px;
+    }
+} 
+
 @media(max-width: 490px) {
     header {
         font-size:20px;
