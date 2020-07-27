@@ -79,7 +79,7 @@ header {
 }
 
 /* General */
-a {
+.link {
     padding: 15px 30px;
     color: #222831;
     font-family: heading2;
@@ -91,7 +91,7 @@ a {
     letter-spacing: 4px;
 
 }
-a:hover {
+.link:hover {
     color: #ffffff;
     background: #221f3b;
     box-shadow: 0 0 5px #ffa5b0,
@@ -145,6 +145,37 @@ ol {
 .paragraph h2 {
     text-transform: uppercase;
     letter-spacing: 5px;
+}
+
+.contactSection {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    flex: 50%;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.contactSection .fa {
+    color: #fff;
+    text-align: left;
+    padding: 7%;
+    font-size: 35px;
+    border-radius: 35px;
+    margin: 2em;
+    background-color: #888686;
+    box-shadow: 0 7px 7px #201012;
+}
+.contactSection .fa:hover {
+    transition: .1s ease-in;
+    box-shadow: 0 7px 15px #49272b;
+    transform: scale(1.2);
+   
+}
+
+.contactSection .fa:active {
+    transform: rotate(15deg);
+    box-shadow: 0 0px 4px #200f11;
 }
 /* Footer */
 .footer {
