@@ -20,15 +20,14 @@
 html {
     scroll-behavior: smooth;
     height: 100vh;
+    cursor: none;
 }
 * {
     margin: 0;
     padding: 0;
     animation: transitionIN 0.75s;
 }
-.contentBox {
-    padding: 10%;
-}
+
 canvas {
     overflow: hidden;
     position: absolute;
@@ -36,24 +35,7 @@ canvas {
     top: 0;
     z-index: -1;
 }
-#particles-js {
-    /* position: relative; */
-}
 
-body {
-    background:#f5f5f5;
-}
-
-.background {
-    background-color: blueviolet;
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    bottom: 0;
-    /* z-index: -1; */
-}
 
 header {
     width: 100%;
@@ -67,7 +49,30 @@ header {
     letter-spacing: 15px;
     white-space: nowrap;  
 }
+a {
+    cursor: none;
+}
 
+.cursor {
+    overflow: hidden;
+    z-index: 12;
+    height: .5rem;
+    width: .5rem;
+    background-color: black;
+    border: 2px solid black;
+    border-radius: 50%;
+    position: absolute;
+    transform: translate(-50%,-50%);
+    pointer-events: none;
+    /* transition: all .2s ease-out; */
+}
+.cur-grow {
+    transform: scale(2);
+}
+
+.contentBox {
+    padding: 10%;
+}
 
 /* Social Network Connect */
 .socialNav {
@@ -87,6 +92,7 @@ header {
 .socialNav a .fa:hover {
     color: #e0dede;
 }
+
 
 /* Navigation Bar */
 .navi {
@@ -121,11 +127,11 @@ header {
     0 0 20px #ffa5b0;
     transition-delay: 0.2s;
     border-radius: 3px;
+    cursor: none;
  }
-
- .link:active {
-
- }
+ #test:hover ~ .cursor {
+    transform: scale(8);
+}
 
 .navContainer {
     border-radius: 20px;
