@@ -72,7 +72,9 @@ header {
     color: #e0dede;
 }
 
-
+li {
+    list-style: none;
+}
 /* Navigation Bar */
 .navi {
     margin-top: 15%;
@@ -107,7 +109,9 @@ header {
     transition-delay: 0.2s;
     border-radius: 3px;
  }
-
+.link:hover:active {
+    background: #2c104d;
+}
 
 .navContainer {
     border-radius: 20px;
@@ -225,6 +229,12 @@ ol {
     }
     .navi {
         margin-top: 40%;
+    }
+    .h2 {
+        margin: 5em;
+    }
+    .paragraph {
+        font-size: 16px
     }
 } 
 
