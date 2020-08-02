@@ -109,9 +109,9 @@ li {
     transition-delay: 0.2s;
     border-radius: 3px;
  }
-.link:hover:active {
+/* .link:hover:active {
     background: #2c104d;
-}
+} */
 
 .navContainer {
     border-radius: 20px;
