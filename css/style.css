@@ -1,19 +1,19 @@
 
 @font-face{
-    src: url(Fonts/neon_future.ttf);
+    src: url(/Fonts/neon_future.ttf);
     font-size: 30px;
     font-family: homePage;
 }
 @font-face{
-    src: url(Fonts/earthorbiter.ttf);
+    src: url(/Fonts/earthorbiter.ttf);
     font-family: headings;
 }
 @font-face{
-    src: url(Fonts/Square.ttf);
+    src: url(/Fonts/Square.ttf);
     font-family: heading2;
 }
 @font-face{
-    src: url(Fonts/Aaargh.ttf);
+    src: url(/Fonts/Aaargh.ttf);
     font-family: text;
 }
 
