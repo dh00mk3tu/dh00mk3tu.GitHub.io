@@ -53,6 +53,8 @@ header {
     padding: 10%;
 }
 
+
+
 /* Social Network Connect */
 .socialNav {
     justify-content:center;
@@ -115,7 +117,7 @@ li {
 
 .navContainer {
     border-radius: 20px;
-    background-color: #e0dede;
+    background-color:rgba(223, 221, 221, 0.5);
     display: none;
     display: flex;
     justify-content: center;
