@@ -48,12 +48,6 @@ header {
     white-space: nowrap;  
 }
 
-hr {
-    opacity: 0.3;
-    margin: 1em auto;
-    width: 90%;
-}
-
 .contentBox {
     padding: 10%;
 }
@@ -122,7 +116,7 @@ li {
 
 .navContainer {
     border-radius: 20px;
-    background-color:rgba(223, 221, 221, 0.5);
+    background-color:rgba(223, 221, 221, 1);
     display: none;
     display: flex;
     justify-content: center;
