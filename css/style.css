@@ -43,11 +43,16 @@ header {
     position: relative;
     justify-content:center;
     margin-top:4%;
-    font-size:40px;
-    letter-spacing: 15px;
+    font-size:45px;
+    letter-spacing: 3px;
     white-space: nowrap;  
 }
 
+hr {
+    opacity: 0.3;
+    margin: 1em auto;
+    width: 90%;
+}
 
 .contentBox {
     padding: 10%;
@@ -227,7 +232,7 @@ ol {
 
 @media(max-width: 990px) {
     header {
-        font-size:20px;
+        font-size:45px;
     }
     .navi {
         margin-top: 40%;
@@ -242,7 +247,7 @@ ol {
 
 @media(max-width: 600px) {
     header {
-        font-size:30px;
+        font-size:45px;
         letter-spacing:5px;
     }
     .navi {
@@ -256,7 +261,7 @@ ol {
 
 @media(max-width: 490px) {
     header {
-        font-size:20px;
+        font-size:35px;
         letter-spacing: 2px;
     }
     .navi {

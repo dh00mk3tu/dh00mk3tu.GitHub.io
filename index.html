@@ -7,8 +7,10 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <link rel="shortcut icon" href="/Img/ico.ico" type="image/x-icon">
-    <link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Orbitron" rel="stylesheet">
+        <link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://code.jquery.com/jquery-3.3.1.js"></script>
     <title>Anirudh Rath | dh00mk3tu</title>
 
     <script>
@@ -44,18 +46,75 @@
                 $(".achievements").toggle(600)
             });
         });
+
+        $(document).ready(function() {
+
+        var $randomnbr = $('.nbr');
+        var $timer = 30;
+        var $it;
+        var $data = 0;
+        var index;
+        var change;
+        var letters = ["d", "h", "0", "0", "m", "k", "3", "t", "u"];
+
+        $randomnbr.each(function() {
+
+        change = Math.round(Math.random()*200);
+        $(this).attr('data-change', change);
+
+        });
+
+        function random() {
+            return Math.round(Math.random()*9);
+        };
+
+        function select() {
+            return Math.round(Math.random()*$randomnbr.length+1);
+        };
+
+        function value() {
+            $('.nbr:nth-child('+select()+')').html(''+random()+'');
+            $('.nbr:nth-child('+select()+')').attr('data-number', $data);
+            $data++;
+
+            $randomnbr.each(function() {
+                if(parseInt($(this).attr('data-number')) > parseInt($(this).attr('data-change'))) {
+                    index = $('.ltr').index(this);
+                    $(this).html(letters[index]);
+                    $(this).removeClass('nbr');
+                }
+            });
+        };
+
+        $it = setInterval(value, $timer);
+        });
     </script>
+
 </head>
 <body>
     <!-- <div class="cursor"></div> -->
     
     <div class="wrapper">
-            <header>
+            <!-- <header>
                 <div class="heading">
                     Anirudh Rath | dh00mk3tu
                 </div>                 
-            </header>
-    
+            </header> -->
+        <header>
+            <div class="header">
+                <div class="random">
+                    <span class="nbr ltr">A</span>
+                    <span class="nbr ltr">N</span>
+                    <span class="nbr ltr">I</span>
+                    <span class="nbr ltr">R</span>
+                    <span class="nbr ltr">U</span>
+                    <span class="nbr ltr">D</span>
+                    <span class="nbr ltr">H</span>
+                    <span class="nbr ltr">3</span>
+                    <span class="nbr ltr">R</span>
+               </div>
+           </div>
+        </header>
         <div class="socialNav">
             <a class="link" href="https://github.com/dh00mk3tu"><i class="fa fa-github"></i></a>
             <a class="link" href="https://twitter.com/dh00mk3tu"><i class="fa fa-twitter"></i></a>
