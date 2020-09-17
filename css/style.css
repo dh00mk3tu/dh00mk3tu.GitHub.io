@@ -16,6 +16,11 @@
     src: url(/Fonts/Aaargh.ttf);
     font-family: text;
 }
+/* Dark Mode Test */
+/* :root {
+    filter: invert(%);
+} */
+
 
 html {
     scroll-behavior: smooth;
