@@ -215,6 +215,44 @@ ol {
     position: relative;
 }
 
+/* Card */
+.card-house {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    flex: 50%;
+    /* flex-wrap: wrap; */
+}
+
+.card {
+  margin: 1em;
+  background-color: rgb(58, 58, 58);
+  color: #fff;
+  border-radius: 5px;
+  box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+  transition: 0.2s;
+  padding: 1em;
+}
+
+.card p {
+    word-wrap: break-word;
+    font-weight: 600;
+    margin: 1em;
+}
+
+.card b {
+    font-family: heading2;
+    font-size: 25px;
+}
+.card:hover {
+  box-shadow: 0 8px 16px 0 #3b3b3b;
+  transform: scale(1.1);
+}
+
+.container-card {
+    padding: 10px 16px;
+}
+
 
 /* Page Transition  */
 
@@ -241,6 +279,9 @@ ol {
     }
     .paragraph {
         font-size: 16px
+    }
+    .card-house {
+        flex-wrap: wrap;
     }
 } 
 
