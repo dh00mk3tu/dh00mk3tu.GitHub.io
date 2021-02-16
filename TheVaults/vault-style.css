@@ -1,0 +1,81 @@
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Cute+Font&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    background-color: rgb(17, 17, 17);
+}
+
+.header {
+    margin-top: 0.1em;
+    text-align: center;
+    color: #9eb6da;
+    font-size: 80px;
+    letter-spacing:3px;
+}
+
+.header p {
+    font-family: 'Bebas Neue', cursive;
+}
+
+.header .caption {
+    font-size:20px;
+}
+
+.console-container {
+    font-family: 'Cute Font', cursive;
+    font-size: 50px;
+    border-radius: 5px;
+    padding: 0.7em;
+    margin: 3em auto;
+    display: flex;
+    height: 100px;
+    width: 80%;
+    background-color: #000000;
+}
+
+.console {
+    background: none;
+}
+
+.console label{
+    color: rgb(13, 206, 132);
+    background: none;
+}
+
+.console input {
+    color: rgb(39, 138, 219);
+    font-family: 'Cute Font', cursive;
+    font-size: 50px;
+    width: 1000px;
+    background: none;
+    outline-width: 0;
+    border: none;
+}
+
+.console-container .submit-btn {
+    background: none;
+    cursor: pointer;
+}
+
+.console-container .submit-btn .process {
+    background: none;
+    width: 3em;
+    height: 1.3em;
+    position: relative;
+    right: 0;
+    text-align: center;
+    color: #fff;
+    background: #221f3b;
+    /* border-radius: 2px; */
+}
+
+.console-container .submit-btn .process:hover {
+    animation : button .3s linear; 
+    color: rgb(65, 165, 231);
+}
+
+.console-container .submit-btn .process:active {
+    color: rgb(50, 211, 184);
+    background: #131125;
+}
