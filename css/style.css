@@ -225,7 +225,7 @@ ol {
 }
 
 .card {
-  width: 80px;
+/*   width: 80px; */
   margin: 1em;
   background-color: rgb(58, 58, 58);
   color: #fff;
