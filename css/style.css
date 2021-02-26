@@ -128,12 +128,14 @@ li {
     margin: 5%;
     padding-top: 10px;
     width:90%;
+    
 }
 ol {
     padding: .5%;
 }
 .navContainer .content {
     padding: 5%;
+    margin-bottom: 1em;
     display: flex;
     flex-direction: column; 
     text-align: center;
@@ -263,10 +265,12 @@ a {
 
 @keyframes transitionIN {
     from {
+        bottom: 0;
         opacity: 0;
         transform: rotateX(-10deg);
     }
     to {
+        bottom: 0;
         opacity: 1;
         transform: rotateX(0);
     }
