@@ -26,34 +26,36 @@
     <script>
         $(document).ready(function(){
              $(".aboutClick").click(function(){
-                $(".aboutme").toggle();
                 $(".projects").hide(600);
                 $(".contact").hide(600);
                 $(".achievements").hide(600);
+                $(".aboutme").toggle();
+
             });
         });
         $(document).ready(function(){
              $(".projectsClick").click(function(){
-                $(".projects").toggle();
                 $(".aboutme").hide(600);
                 $(".contact").hide(600);
-                $(".achievements").hide(600)
+                $(".achievements").hide(600);
+                $(".projects").toggle();
+
             });
         });
         $(document).ready(function(){
              $(".contactClick").click(function(){
-                $(".contact").toggle();
                 $(".projects").hide(600);
                 $(".aboutme").hide(600);
-                $(".achievements").hide(600)
+                $(".achievements").hide(600);
+                $(".contact").toggle();
             });
         });
         $(document).ready(function(){
              $(".achievementsClick").click(function(){
-                $(".achievements").toggle(600)
                 $(".projects").hide(600);
                 $(".aboutme").hide(600);
                 $(".contact").hide(600);
+                $(".achievements").toggle(600);
             });
         });
 
@@ -137,10 +139,10 @@
             <a href="#aboutme" class="aboutClick link" id="test" data-text="About Me">
                 About Me
             </a>
-            <a href="#projects" class="projectsClick link" data-text="Projects">
+            <a href="#projectSection" class="projectsClick link" data-text="Projects">
                 Projects
             </a>
-            <a href="#contact" class="contactClick link" data-text="Contact">
+            <a href="#contactSection" class="contactClick link" data-text="Contact">
                 Contact
             </a>
             <a href="#achievements" class="achievementsClick link" data-text="Achievements">
@@ -243,7 +245,7 @@
                 <div class="title">
                     Projects
                 </div>
-                <div class="card-house">
+                <div class="card-house" id="projectSection">
                     <a href="https://github.com/dh00mk3tu/Project_AnYa">
                     <div class="card">
                         <img src="Img/anyaLogo.png" alt="AnYa" style="width:150px; height: 150px;">
@@ -300,7 +302,7 @@
                                 <p>x86_64 Kernel written from scratch in Assembly & C</p> 
                             </div>
                         </div>
-                        </a>
+                    </a>
                 </div>
             </div>
         </div>
@@ -335,7 +337,53 @@
                     Achievements
                 </div>
                 <div class="paragraph">
-                    This Section is Currently Under Development
+                    <div class="card-house">
+                        <div class="card" >
+                            <!-- <img src="Img/astraosLogo.png" alt="Astra-OS" style="width:150px; height: 150px;"> -->
+                            <div class="container-card">
+                                <h4><b>Best Speaker</b></h4> 
+                                <p>I was awarded third prize for my meritorious performance at 50th Youth Parliament 2015-16</p> 
+                            </div>
+                        </div>
+                        <div class="card" >
+                            <!-- <img src="Img/astraosLogo.png" alt="Astra-OS" style="width:150px; height: 150px;"> -->
+                            <div class="container-card">
+                                <h4><b>Star Performer</b></h4> 
+                                <p>I was awarded first prize for my performance at JIMS Expression Fiesta in Art & Sketching</p> 
+                            </div>
+                        </div>
+                        <div class="card" >
+                            <!-- <img src="Img/astraosLogo.png" alt="Astra-OS" style="width:150px; height: 150px;"> -->
+                            <div class="container-card">
+                                <h4><b>Best Research Paper Award</b></h4> 
+                                <p>I was awarded first prize at ICRAMSTEL 2019 for my Research Paper "Project AnYa</p> 
+                            </div>
+                        </div>
+                        <div class="card" >
+                            <!-- <img src="Img/astraosLogo.png" alt="Astra-OS" style="width:150px; height: 150px;"> -->
+                            <div class="container-card">
+                                <h4><b>Best Organizer</b></h4> 
+                                <p>I was awarded first prize for my contribution and work at HASHTAG, Technical Society of JEMTEC</p> 
+                            </div>
+                        </div>
+                        <div class="card" >
+                            <!-- <img src="Img/astraosLogo.png" alt="Astra-OS" style="width:150px; height: 150px;"> -->
+                            <div class="container-card">
+                                <h4><b>Sanskriti Gyan Pariksha</b></h4> 
+                                <p>I was awarded for my excellent performance in Sanskriti Gyan Pariksha consecutively from 2009-11</p> 
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card-house">
+                        <div class="card" >
+                            <!-- <img src="Img/astraosLogo.png" alt="Astra-OS" style="width:150px; height: 150px;"> -->
+                            <div class="container-card">
+                                <h4><b>Best Poster</b></h4> 
+                                <p>I was awarded for designing the best poster for School Magazine & School Fete - 2017 </p> 
+                            </div>
+                        </div>
+                    </div>
+                    
                 </div>
             </div>
         </div>
