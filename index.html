@@ -11,19 +11,52 @@
         gtag('config', 'G-N4HRLV61N2');
     </script>
     
+
+    <!-- Imports -->
+    <script src="./js/baffle.js"></script>
     <link rel="stylesheet" type="text/css" href="/css/style.css">
-    <link rel="stylesheet" type="text/css" href="/css/slick.css">
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <link rel="shortcut icon" href="/Img/ico.ico" type="image/x-icon">
+    
+    <link rel="stylesheet" type="text/css" href="slick/slick-theme.css"/>
     <link href="https://fonts.googleapis.com/css?family=Orbitron" rel="stylesheet">
     <link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
     
+
+    <!-- Meta Data -->
     <title>Anirudh Rath | dh00mk3tu</title>
 
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="copyright" content="Aromal Anil">
+    <meta name="rating" content="General">
+    <meta name="coverage" content="Worldwide">
+    <meta name="creator" content="Anirudh Rath">
+    <meta name="author" content="Anirudh Rath">
+    <meta name="theme-color" content="#294572" />
+    <link rel="manifest" href="/site.webmanifest">
+
+    <meta name="title" content="Anirudh Rath">
+    <meta name="title" content="dh00mk3tu">
+    <meta name="description"
+        content="I'm Anirudh Rath or dh00mk3tu if you may. I am a passionate CSE Engineer with love for C/C++ and Linux!">
+
+    <meta itemProp="keywords"
+        content="Anirudh-Rath, Anirudh-R, anirudh-r, anirudhrath, anirudh-rath, anirudhr, _anirudhrath, _anirudhr, Anirudh-R-Anya, Anirudh-Rath-SenseiMods, Anirudh-Rath-GUI, Anirudh-R-GU, Anirudh-Rath-IOSD, anirudh-rath-IOSD, Anirudh-R-IOSD, Anirudh-Rath-WEB, 
+        Anirudh-Developer, Anirudh-Rath-Developer, Anirudh-Rath-Javascript-Developer,  anirudh-rath-developer, Anirudh-Rath-MLSA, Anirudh-Rath-ghss-kalavoor, Anirudh-Rath-lfps-kalavoor, Anirudh-Rath-IBMZ, anirudh-rath-web-developer,  Anirudh-Rath-front-end-developer, software-engineer, computer-science, anirudh-ravichander, anirudh-ravichander, anirudh-rathi, " />
+
+    <!-- Meta End -->
     <script>
+
+        $(document).ready(function(){
+            $('.card-house').slick({
+                slidesToShow: 1
+            });
+        });
         $(document).ready(function(){
              $(".aboutClick").click(function(){
                 $(".projects").hide(600);
@@ -134,7 +167,9 @@
             <a class="link" href="https://www.facebook.com/dh00mk3tu"><i class="fa fa-facebook"></i></a>
             <a class="link" href="https://in.linkedin.com/in/dh00mk3tu"><i class="fa fa-linkedin"></i></a>
         </div>
-
+        <div class="shuffle">
+            <h2 id="main-title"><span class="title-sub">Human</span></h2>
+        </div>
         <div class="navi" >
             <a href="#aboutme" class="aboutClick link" id="test" data-text="About Me">
                 About Me
@@ -246,24 +281,29 @@
                     Projects
                 </div>
                 <div class="card-house" id="projectSection">
-                    <a href="https://github.com/dh00mk3tu/Project_AnYa">
-                    <div class="card">
-                        <img src="Img/anyaLogo.png" alt="AnYa" style="width:150px; height: 150px;">
-                        <div class="container-card">
-                            <h4><b>Project AnYa</b></h4> 
-                            <p>Award Winning System Automation Tool</p> 
-                        </div>
-                    </div>
-                    </a>
-                    <a href="https://github.com/dh00mk3tu/sling">
-                    <div class="card" >
-                        <img src="Img/slingLogo.png" alt="AnYa" style="width:150px; height: 150px;">
-                        <div class="container-card">
-                            <h4><b>Sling</b></h4> 
-                            <p>Undetectable Malware in C</p> 
-                        </div>
-                    </div>
-                    </a>
+                    
+                        <a href="https://github.com/dh00mk3tu/Project_AnYa">
+                            <div class="card">
+                                <img src="Img/anyaLogo.png" alt="AnYa" style="width:150px; height: 150px;">
+                                <div class="container-card">
+                                    <h4><b>Project AnYa</b></h4> 
+                                    <p>Award Winning System Automation Tool</p> 
+                                </div>
+                            </div>
+                        </a>
+                    
+                    
+                        <a href="https://github.com/dh00mk3tu/sling">
+                            <div class="card" >
+                                <img src="Img/slingLogo.png" alt="AnYa" style="width:150px; height: 150px;">
+                                <div class="container-card">
+                                    <h4><b>Sling</b></h4> 
+                                    <p>Undetectable Malware in C</p> 
+                                </div>
+                            </div>
+                        </a>
+                    
+                    
                     <a href="https://github.com/dh00mk3tu/auto-git">
                     <div class="card">
                         <img src="Img/autogitLogo.png" alt="AnYa" style="width:150px; height: 150px;">
@@ -373,7 +413,8 @@
                                 <p>I was awarded for my excellent performance in Sanskriti Gyan Pariksha consecutively from 2009-11</p> 
                             </div>
                         </div>
-                    </div>
+                    </div> 
+                    <br>  
                     <div class="card-house">
                         <div class="card" >
                             <!-- <img src="Img/astraosLogo.png" alt="Astra-OS" style="width:150px; height: 150px;"> -->
@@ -382,8 +423,7 @@
                                 <p>I was awarded for designing the best poster for School Magazine & School Fete - 2017 </p> 
                             </div>
                         </div>
-                    </div>
-                    
+                    </div>                 
                 </div>
             </div>
         </div>
@@ -397,10 +437,8 @@
 
         <div class="particle"  id="particles-js">
             <script src="js/particles.js"></script>
-            <script src="js/glider.js"></script>
             <script src="js/app.js"></script>
-            <script type="text/javascript" src="//code.jquery.com/jquery-1.11.0.min.js"></script>
-            <script type="text/javascript" src="//code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
         </div>
+        
 </body>
 </html>

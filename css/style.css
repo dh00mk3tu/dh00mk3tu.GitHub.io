@@ -53,6 +53,7 @@ header {
     white-space: nowrap;  
 }
 
+
 .contentBox {
     padding: 10%;
 }
@@ -208,6 +209,20 @@ ol {
         height: 40px;
         animation: transitionIN 2s ease-in-out;
     /* box-shadow: -2px -2px 4px 0 rgba(0, 0, 0, 0.2); */
+}
+.shuffle {
+    width: 100%;
+    font-family: 'headings';
+    color: #222831;
+    display:flex;
+    position: relative;
+    justify-content:center;
+    font-size:100px;
+    letter-spacing: 3px;
+    white-space: nowrap;
+}
+.title-sub { 
+    font-size: 20px;
 }
 
 .footer p {
