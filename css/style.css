@@ -196,6 +196,61 @@ ol {
     transform: rotate(15deg);
     box-shadow: 0 0px 4px #200f11;
 }
+.contact-wrapper {
+    display: flex;
+    flex-direction: column;
+}
+
+input {
+    font-family: 'text';
+    outline: none;
+    font-weight: bold;
+    background-color: #696969;
+    color: #fff;
+    width: 50%;
+    border: none;
+    height: 30px;
+    padding: 5px;
+    margin:.5em;
+    border-radius: 5px;
+}
+
+textarea {
+    margin: .5em;
+    font-family: 'text';
+    font-weight: bold;
+    outline: none;
+    background-color: #888686;
+    color: #fff;
+    border: none;
+    height: 15em;
+    width: 50%;
+    padding: 10px 5px;
+    border-radius: 5px;
+}
+
+.contactBtn {
+    position: relative;
+    font-family: 'heading2';
+    color: #fff;
+    background-color: #696969;
+    margin: 1em 10px;
+    border-radius: 5px;
+    border: none;
+    height: 40px; 
+    width: 6em;   
+    transition: .1s linear;
+}
+.contactBtn:hover {
+    width: 6.2em;
+    background-color: #858585;
+}
+
+.contactBtn:active {
+    width: 5.8em;
+    background-color: #474747;
+    color: #c04dda;
+}
 
 /* Footer */
 .footer {
@@ -211,11 +266,12 @@ ol {
     /* box-shadow: -2px -2px 4px 0 rgba(0, 0, 0, 0.2); */
 }
 .shuffle {
+    /* background-color: #1d1d1d; */
     width: 100%;
     font-family: 'headings';
-    color: #222831;
+    color: #221f3b;
     display:flex;
-    position: relative;
+    position: absolute;
     justify-content:center;
     margin-top: 5px;
     letter-spacing: 3px;
@@ -310,6 +366,10 @@ a {
     .card-house {
         flex-wrap: wrap;
     }
+    input, textarea {
+        font-size: 15px;
+        width: 90%;
+    }
 } 
 
 @media(max-width: 600px) {
@@ -340,5 +400,9 @@ a {
     }
     .contactSection {
         flex: 1;
+    }
+    input, textarea {
+        font-size: 15px;
+        width: 90%;
     }
 } 

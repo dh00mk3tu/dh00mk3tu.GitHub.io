@@ -355,7 +355,28 @@
                     Contact
                 </div>
                 <div class="paragraph">
-                    You can reach out to me via multiple platforms. I'd love to hear from you!
+                    <br>
+                    <p>Let's work on your next big project, together?</p>
+                    <div class="contact-wrapper">
+                        <br><br>
+                        <form name="contact" action="message_send.html" class="contact-form" netlify-honeypot="bot-field" data-netlify="true">
+                            <p>
+                                <h3 class="form-head">I'm all ears!</h3>
+                            </p>
+                            <input required placeholder="Name" class="input" type="text" name="name" id="name" autocomplete="off" />
+                            <!-- <br> -->
+                            <input required placeholder="Email Address" class="input" type="email" name="email" id="email" autocomplete="off" />
+                            <br>
+                            <input placeholder="Subject" class="input" type="text" name="subject" id="subject" autocomplete="off" />
+                            <br>
+                            <textarea required placeholder="Your Message" name="message" class="input" id="message"></textarea>
+                            <br>
+                            <button class="contactBtn" type="submit">Send Mail</button>
+                        </form>
+                    </div>
+                    <p style="margin-top:2em">
+                        You can reach out to me via multiple platforms. I'd love to hear from you!
+                    </p>
                     <br>
                     <div class="contactSection">
                         <a href="https://github.com/dh00mk3tu"><i class="fa fa-github"></i></a>
