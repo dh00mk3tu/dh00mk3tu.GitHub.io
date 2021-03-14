@@ -11,10 +11,10 @@
       "value": ["#DA0463", "#221f3b", "#6a197d"]
     },
     "shape": {
-      "type": "circle",
+      "type": "triangle",
       "stroke": {
         "width": 0,
-        "color": "#000000"
+        "color": "#ececec"
       },
       "polygon": {
         "nb_sides": 5
@@ -32,7 +32,7 @@
         "enable": true,
         "speed": 1,
         "opacity_min": 0.1,
-        "sync": false
+        "sync": true
       }
     },
     "size": {
@@ -54,12 +54,12 @@
     },
     "move": {
       "enable": true,
-      "speed": 3,
+      "speed": 5,
       "direction": "none",
       "random": true,
       "straight": false,
       "out_mode": "out",
-      "bounce": false,
+      "bounce": true,
       "attract": {
         "enable": false,
         "rotateX": 600,
@@ -72,11 +72,11 @@
     "events": {
       "onhover": {
         "enable": false,
-        "mode": "repulse"
+        "mode": "bubble"
       },
       "onclick": {
         "enable": true,
-        "mode": "push"
+        "mode": "bubble"
       },
       "resize": true
     },
@@ -88,14 +88,14 @@
         }
       },
       "bubble": {
-        "distance": 400,
-        "size": 40,
-        "duration": 2,
-        "opacity": 8,
-        "speed": 3
+        "distance": 250,
+        "size": 3.5,
+        "duration": 0.5,
+        "opacity": 3,
+        "speed": 10
       },
       "repulse": {
-        "distance": 200,
+        "distance": 100,
         "duration": 0.4
       },
       "push": {
@@ -106,5 +106,5 @@
       }
     }
   },
-  "retina_detect": true
+  "retina_detect": false
 }
