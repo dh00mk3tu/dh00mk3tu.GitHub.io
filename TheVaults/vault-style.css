@@ -21,61 +21,19 @@
 .header .caption {
     font-size:20px;
 }
-
-.console-container {
-    font-family: 'Cute Font', cursive;
-    font-size: 50px;
-    border-radius: 5px;
-    padding: 0.7em;
-    margin: 3em auto;
+.container {
     display: flex;
-    height: 100px;
-    width: 80%;
-    background-color: #000000;
+    justify-content: center;
+}
+.logContainer {
+    width: 90%;
+    height: 80%;
+    background-color: #ececec;
 }
 
-.console {
-    background: none;
-}
-
-.console label{
-    color: rgb(13, 206, 132);
-    background: none;
-}
-
-.console input {
-    color: rgb(39, 138, 219);
-    font-family: 'Cute Font', cursive;
-    font-size: 50px;
-    width: 1000px;
-    background: none;
-    outline-width: 0;
-    border: none;
-}
-
-.console-container .submit-btn {
-    background: none;
-    cursor: pointer;
-}
-
-.console-container .submit-btn .process {
-    background: none;
-    width: 3em;
-    height: 1.3em;
-    position: relative;
-    right: 0;
+.log-title {
     text-align: center;
     color: #fff;
-    background: #221f3b;
-    /* border-radius: 2px; */
-}
-
-.console-container .submit-btn .process:hover {
-    animation : button .3s linear; 
-    color: rgb(65, 165, 231);
-}
-
-.console-container .submit-btn .process:active {
-    color: rgb(50, 211, 184);
-    background: #131125;
+    font-size: 50px;
+    font-family: 'heading2';
 }
