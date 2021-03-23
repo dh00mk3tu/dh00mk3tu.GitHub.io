@@ -349,7 +349,14 @@ a {
 }
 
 /* Responsive */
-
+@media (max-width: 768px) {
+    .card {
+        width: 210px;
+        font-weight: 100;
+        font-family: text;
+        font-size: 12px;
+    }
+}
 @media(max-width: 990px) {
     header {
         font-size:45px;
