@@ -120,6 +120,25 @@ li {
     background: #2c104d;
 } */
 
+.aboutme img {
+    border-radius: 15px;
+    box-shadow: 0 0 10px 0 rgb(110, 110, 110);
+}
+
+.aboutme .heroImage .textOver{
+    position: absolute;
+    text-align: center;
+    font-size: 40px;
+    font-family: 'headings';
+}
+.aboutme .hero {
+    width: 100%;
+    /* height: ; */
+    margin-bottom: 3em;
+    border-radius: 15px;
+    box-shadow: 0 0 10px 0 rgb(110, 110, 110);
+    filter: blur(10);
+}
 .navContainer {
     border-radius: 20px;
     background-color:rgba(223, 221, 221, 1);
