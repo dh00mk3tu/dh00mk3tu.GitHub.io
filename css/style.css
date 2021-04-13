@@ -368,13 +368,20 @@ a {
 }
 
 /* Responsive */
-@media (max-width: 768px) {
+@media (min-width: 760px) {
     .card {
-        width: 210px;
+        width: 200px;
         font-weight: 100;
         font-family: text;
-        font-size: 12px;
+        font-size: 11px;
     }
+    .card-house {
+        flex-wrap: wrap;
+    }
+    .achi-card > .card {
+        font-size: 15px;
+    }
+
 }
 @media(max-width: 990px) {
     header {
@@ -388,6 +395,10 @@ a {
     }
     .paragraph {
         font-size: 16px
+    }
+    .achi-card > .card {
+        width: 200px;
+        font-size: 15px;
     }
     .card-house {
         flex-wrap: wrap;
@@ -430,5 +441,13 @@ a {
     input, textarea {
         font-size: 15px;
         width: 90%;
+    }
+    .aboutme .heroImage img {
+        height: 10%;
+    }
+    .aboutme .boxPicture img {
+        height: 210px;
+        width: 200px;
+        border-radius: 50%;
     }
 } 
