@@ -108,8 +108,7 @@
         $(document).ready(function() {
 
         var $randomnbr = $('.nbr');
-        var $timer = 30;
-        var $hold = 4;
+        var $timer = 15;
         var $it;
         var $data = 0;
         var index;
@@ -118,7 +117,7 @@
 
         $randomnbr.each(function() {
 
-        change = Math.round(Math.random()*200);
+        change = Math.round(Math.random()*400);
         $(this).attr('data-change', change);
 
         });
