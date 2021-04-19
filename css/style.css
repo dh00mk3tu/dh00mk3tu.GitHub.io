@@ -16,10 +16,6 @@
     src: url(/Fonts/Aaargh.ttf);
     font-family: text;
 }
-@font-face{
-    src: url(/Fonts/Zector.ttf);
-    font-family: zector;
-}
 /* Dark Mode Test */
 /* :root {
     filter: invert(%);
@@ -27,12 +23,10 @@
 
 
 html {
-    overflow: hidden;
     scroll-behavior: smooth;
     height: 100vh;
 }
 * {
-    /* overflow: hidden; */
     margin: 0;
     padding: 0;
 }
@@ -48,47 +42,17 @@ canvas {
 
 header {
     width: 100%;
-    font-family: 'zector';
-    font-weight: bold;
+    font-family: 'headings';
     color: #222831;
     display:flex;
     position: relative;
     justify-content:center;
-    margin-top:10%;
+    margin-top:4%;
     font-size:45px;
     letter-spacing: 3px;
-    white-space: nowrap;
-    animation : introIn 4s ease-out;    
+    white-space: nowrap;  
 }
 
-@keyframes introIn {
-    0% {
-        margin-top: 50%;
-        font-size: 500px;
-    }
-    50% {
-        margin-top: 40%;
-    }
-    100% {
-        margin-top: 10%;
-        font-size: 45px;
-    }
-
-}
-
-@keyframes lightsIn {
-    0% {
-        opacity: 0;
-    }
-    60% {
-        opacity: 0;
-        display: none;
-    }
-    100% {
-        opacity: 1; 
-    }
-
-}
 
 .contentBox {
     padding: 10%;
@@ -102,8 +66,6 @@ header {
     margin-top: 2em;
     display: flex;
     flex-direction: row;
-    animation: lightsIn 6s ease-in;
-    
 
 }
 .socialNav .fa {
@@ -129,7 +91,7 @@ li {
     flex-wrap: wrap;
     text-align: center;
     justify-content: center;
-    animation: lightsIn 7s ease-in;
+    animation: transitionIN 1s ;
 }
 
 /* General */
@@ -319,7 +281,7 @@ textarea {
         color: white;
         text-align: center;
         height: 40px;
-        animation: transitionIN 8s ease-in-out;
+        animation: transitionIN 2s ease-in-out;
     /* box-shadow: -2px -2px 4px 0 rgba(0, 0, 0, 0.2); */
 }
 .shuffle {
@@ -333,8 +295,6 @@ textarea {
     margin-top: 5px;
     letter-spacing: 3px;
     white-space: nowrap;
-    animation: lightsIn 5s ease-in;
-
 }
 .title-sub { 
     font-size: 15px;
