@@ -54,11 +54,11 @@ header {
     display:flex;
     position: relative;
     justify-content:center;
-    margin-top:10%;
+    margin-top:4%;
     font-size:45px;
     letter-spacing: 3px;
     white-space: nowrap;
-    animation : introIn 4s ease-out;    
+    animation : lightsIn .5s ease-out;    
 }
 
 @keyframes introIn {
@@ -79,10 +79,6 @@ header {
 @keyframes lightsIn {
     0% {
         opacity: 0;
-    }
-    60% {
-        opacity: 0;
-        display: none;
     }
     100% {
         opacity: 1; 
@@ -129,7 +125,7 @@ li {
     flex-wrap: wrap;
     text-align: center;
     justify-content: center;
-    animation: lightsIn 7s ease-in;
+    animation: lightsIn 2s ease-in;
 }
 
 /* General */
@@ -319,7 +315,7 @@ textarea {
         color: white;
         text-align: center;
         height: 40px;
-        animation: transitionIN 8s ease-in-out;
+        animation: transitionIN 3s ease-in-out;
     /* box-shadow: -2px -2px 4px 0 rgba(0, 0, 0, 0.2); */
 }
 .shuffle {
