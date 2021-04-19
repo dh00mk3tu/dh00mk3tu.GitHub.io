@@ -51,6 +51,16 @@ header {
     font-size:45px;
     letter-spacing: 3px;
     white-space: nowrap;  
+    animation : lightsIn 1s ease-in-out;
+}
+
+@keyframes lightsIn {
+    to {
+        opacity: 1;
+    }
+    from {
+        opacity: 0;
+    }
 }
 
 
@@ -66,6 +76,7 @@ header {
     margin-top: 2em;
     display: flex;
     flex-direction: row;
+    animation : lightsIn 3s ease-in-out;
 
 }
 .socialNav .fa {
@@ -91,7 +102,7 @@ li {
     flex-wrap: wrap;
     text-align: center;
     justify-content: center;
-    animation: transitionIN 1s ;
+    animation : lightsIn 4s ease-in-out;
 }
 
 /* General */
@@ -295,6 +306,7 @@ textarea {
     margin-top: 5px;
     letter-spacing: 3px;
     white-space: nowrap;
+    animation : lightsIn 2s ease-in-out;
 }
 .title-sub { 
     font-size: 15px;
@@ -315,6 +327,64 @@ textarea {
     justify-content: center;
     flex: 50%;
     /* flex-wrap: wrap; */
+}
+/* Slick Carousel */
+.slider {
+    width: 50%;
+    margin: 100px auto;
+}
+
+.slick-slide {
+  margin: 0px 20px;
+}
+
+.slick-slide img {
+  width: 100%;
+}
+
+.slick-prev:before,
+.slick-next:before {
+  color: black;
+}
+
+
+.slick-slide {
+  transition: all ease-in-out .3s;
+  opacity: .2;
+}
+
+.slick-active {
+  opacity: .5;
+}
+
+.slick-current {
+  opacity: 1;
+}
+
+
+/* End */
+
+.card-intro {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction:row;
+    /* margin-right: 100px; */
+    /* box-sizing: border-box; */
+    /* width: 60%; */
+}
+.curr-proj .element {
+    width:200px;
+} 
+
+.curr-proj {
+    /* width: 60%; */
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+    border-radius: 5px;
+    background-color: rgb(102, 102, 102);
+    color: #fff;
+    margin: .7em;
+    padding: 0.5em;
 }
 
 .card {
