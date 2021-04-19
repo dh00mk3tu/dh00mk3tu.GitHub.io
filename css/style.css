@@ -27,10 +27,12 @@
 
 
 html {
+    overflow: hidden;
     scroll-behavior: smooth;
     height: 100vh;
 }
 * {
+    /* overflow: hidden; */
     margin: 0;
     padding: 0;
 }
@@ -47,7 +49,7 @@ canvas {
 header {
     width: 100%;
     font-family: 'zector';
-    font-weight: ;
+    font-weight: bold;
     color: #222831;
     display:flex;
     position: relative;
@@ -317,7 +319,7 @@ textarea {
         color: white;
         text-align: center;
         height: 40px;
-        animation: transitionIN 7s ease-in-out;
+        animation: transitionIN 8s ease-in-out;
     /* box-shadow: -2px -2px 4px 0 rgba(0, 0, 0, 0.2); */
 }
 .shuffle {
