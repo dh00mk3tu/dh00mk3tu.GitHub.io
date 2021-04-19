@@ -120,6 +120,25 @@ li {
     background: #2c104d;
 } */
 
+.aboutme img {
+    border-radius: 15px;
+    box-shadow: 0 0 10px 0 rgb(110, 110, 110);
+}
+
+.aboutme .heroImage .textOver{
+    position: absolute;
+    text-align: center;
+    font-size: 40px;
+    font-family: 'headings';
+}
+.aboutme .hero {
+    width: 100%;
+    /* height: ; */
+    margin-bottom: 3em;
+    border-radius: 15px;
+    box-shadow: 0 0 10px 0 rgb(110, 110, 110);
+    filter: blur(10);
+}
 .navContainer {
     border-radius: 20px;
     background-color:rgba(223, 221, 221, 1);
@@ -349,6 +368,28 @@ a {
 }
 
 /* Responsive */
+@media (max-width: 700px) {
+    .card {
+        width: 200px;
+        font-weight: 100;
+        font-family: text;
+        font-size: 11px;
+    }
+    .card-house {
+        flex-wrap: wrap;
+    }
+    .achi-card > .card {
+        font-size: 11px;
+    }
+
+}
+
+@media (min-width: 710px) {
+    .achi-card > .card {
+        font-size: 15px;
+    }
+}
+
 
 @media(max-width: 990px) {
     header {
@@ -362,6 +403,10 @@ a {
     }
     .paragraph {
         font-size: 16px
+    }
+    .achi-card > .card {
+        width: 200px;
+        font-size: 15px;
     }
     .card-house {
         flex-wrap: wrap;
@@ -391,6 +436,9 @@ a {
         font-size:35px;
         letter-spacing: 2px;
     }
+    .achievements > .content > .title {
+        font-size: 35px;
+    }
     .navi {
         margin-top: 40%;
     }
@@ -405,4 +453,19 @@ a {
         font-size: 15px;
         width: 90%;
     }
+    .aboutme .heroImage img {
+        height: 10%;
+    }
+    .aboutme .boxPicture img {
+        height: 210px;
+        width: 200px;
+        border-radius: 50%;
+    }
 } 
+
+@media(max-width: 380px) {
+    .achi-card > .card {
+        width: 200px;
+        font-size: 20px;
+    }
+}

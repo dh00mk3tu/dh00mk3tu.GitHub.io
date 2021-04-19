@@ -61,6 +61,7 @@
              $(".aboutClick").click(function(){
                 $(".projects").hide(600);
                 $(".contact").hide(600);
+                $(".blog").hide(600);
                 $(".achievements").hide(600);
                 $(".aboutme").toggle();
 
@@ -70,6 +71,7 @@
              $(".projectsClick").click(function(){
                 $(".aboutme").hide(600);
                 $(".contact").hide(600);
+                $(".blog").hide(600);
                 $(".achievements").hide(600);
                 $(".projects").toggle();
 
@@ -80,6 +82,7 @@
                 $(".projects").hide(600);
                 $(".aboutme").hide(600);
                 $(".achievements").hide(600);
+                $(".blog").hide(600);
                 $(".contact").toggle();
             });
         });
@@ -88,14 +91,24 @@
                 $(".projects").hide(600);
                 $(".aboutme").hide(600);
                 $(".contact").hide(600);
+                $(".blog").hide(600);
                 $(".achievements").toggle(600);
+            });
+        });
+        $(document).ready(function(){
+             $(".blogClick").click(function(){
+                $(".projects").hide(600);
+                $(".aboutme").hide(600);
+                $(".contact").hide(600);
+                $(".achievements").hide(600);
+                $(".blog").toggle(600);
             });
         });
 
         $(document).ready(function() {
 
         var $randomnbr = $('.nbr');
-        var $timer = 20;
+        var $timer = 15;
         var $it;
         var $data = 0;
         var index;
@@ -104,7 +117,7 @@
 
         $randomnbr.each(function() {
 
-        change = Math.round(Math.random()*150);
+        change = Math.round(Math.random()*400);
         $(this).attr('data-change', change);
 
         });
@@ -184,6 +197,9 @@
             <a href="#achievements" class="achievementsClick link" data-text="Achievements">
                 Achievements
             </a>
+            <a href="#blog" class="blogClick link" data-text="Blog">
+                Blog
+            </a>
         </div>
         
         <div class="aboutme navContainer" id="aboutme" style="display: none;">           
@@ -193,7 +209,13 @@
                 </div>
                 <br><br>
                 <div class="paragraph">
-                    <p>
+                    <p> 
+                        <div class="heroImage">
+                            <!-- <div class="textOver">
+                                DK3TM
+                            </div> -->
+                            <img class="hero" src="Img/PSX_20210410_135528.jpg">
+                        </div>
                         Greetings, my name is Anirudh Rath.
                         <br><br>
                         First of all I'd like to thank you for paying a visit here. I'm grateful. 
@@ -260,10 +282,14 @@
                         Strong arts and design professional,  
                         with a Passion for Art, Pop Science, Music and Literature. 
                         I'm an artist, I draw and paint in a variety of styles but amongst all my favourite remains to be Monochrome Oil Paintings.
-                        I love my Cakee :')
-                
+                        <br>
+                        <p>
+                            My Cakee taught me how to love, I'm blessed & I'm always here to hold my cakeeee :")
+                        </p>
                         <br><br>
-                        <img id=cpp src="/Img/pfp2.jpg" alt="Anirudh Rath | dh00mk3tu" width="600" height="600">
+                        <div class="boxPicture">
+                            <img id=cpp src="/Img/heroImage.jpg" alt="Anirudh Rath | dh00mk3tu" width="600" height="600">
+                        </div>
                         <br><br>
                         I write Stories, Proses and Haikus to express my emotions and perspective towards the Human Psychology and Humanity.
                         <br><br>
@@ -357,14 +383,14 @@
                 <div class="paragraph">
                     <br>
                     <p>Let's work on your next big project, together?</p>
-                    <div class="contact-wrapper">
+                    <!-- <div class="contact-wrapper">
                         <br><br>
-                        <form name="contact" action="POST" class="contact-form" data-netlify="true">
+                        <form name="contact" action="POST" class="contact-form"  data-netlify="true">
                             <p>
                                 <h3 class="form-head">I'm all ears!</h3>
                             </p>
                             <input required placeholder="Name" class="input" type="text" name="name" id="name" autocomplete="off" />
-                            <!-- <br> -->
+                            <br>
                             <input required placeholder="Email Address" class="input" type="email" name="email" id="email" autocomplete="off" />
                             <br>
                             <input placeholder="Subject" class="input" type="text" name="subject" id="subject" autocomplete="off" />
@@ -373,7 +399,7 @@
                             <br>
                             <button class="contactBtn" type="submit">Send Mail</button>
                         </form>
-                    </div>
+                    </div> -->
                     <p style="margin-top:2em">
                         You can reach out to me via multiple platforms. I'd love to hear from you!
                     </p>
@@ -399,7 +425,7 @@
                     Achievements
                 </div>
                 <div class="paragraph">
-                    <div class="card-house">
+                    <div class="card-house achi-card">
                         <div class="card" >
                             <!-- <img src="Img/astraosLogo.png" alt="Astra-OS" style="width:150px; height: 150px;"> -->
                             <div class="container-card">
@@ -437,7 +463,7 @@
                         </div>
                     </div> 
                     <br>  
-                    <div class="card-house">
+                    <div class="card-house achi-card">
                         <div class="card" >
                             <!-- <img src="Img/astraosLogo.png" alt="Astra-OS" style="width:150px; height: 150px;"> -->
                             <div class="container-card">
@@ -446,6 +472,27 @@
                             </div>
                         </div>
                     </div>                 
+                </div>
+            </div>
+        </div>
+
+        <!-- Blog  -->
+        <div class="blog navContainer" id="blog" style="display: none;">
+            <div class="content">
+                <div class="title">
+                    Blog
+                </div>
+                <div class="paragraph">
+                    <div class="card-house">
+                        <a href="https://anirudhrath.tech/blog">
+                            <div class="card" >
+                                <!-- <img src="Img/astraosLogo.png" alt="Astra-OS" style="width:150px; height: 150px;"> -->
+                                <div class="container-card">
+                                    <h4><b>Dev Logs</b></h4> 
+                                    <p>My Journey as a Developer and an Engineer, logged.  One project at a time</p> 
+                                </div>
+                            </div>
+                        </a>
                 </div>
             </div>
         </div>
