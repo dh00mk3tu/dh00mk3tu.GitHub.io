@@ -363,7 +363,7 @@ textarea {
 
 .curr-tech-host {
     background-color: #d1d1d1;
-    width: 100%;
+    width: auto;
     height: auto;
     margin: .7em;
     padding: 0.7em;
@@ -405,6 +405,7 @@ textarea {
     justify-content: center;
     align-items: center;
     flex-direction:row;
+    flex-wrap: wrap;
     /* margin-right: 100px; */
     /* box-sizing: border-box; */
     /* width: 60%; */
