@@ -2,6 +2,11 @@ particlesJS.load('particles-js', 'particle.json', function() {
   console.log('particles.js loaded - callback');
 });
 
+$(document).ready(function() {
+  // setInterval(2000);
+  alert('Hello, I am working to improve the site\'s performance, add new features and maybe overhaul it completely. So you might find bugs or feel as if the site is sluggish. I am sorry about it.');
+});
+
 
 //Shuffle 2
 const b = baffle(".title-sub");
@@ -21,3 +26,4 @@ let changeTitle = () => {
 }
 
 setInterval(changeTitle, 3200);
+
