@@ -12,7 +12,7 @@ b.set({
 
 var i = 1;
 let changeTitle = () => {
-  let titles = ["Human", "Painter", "Shell Scripter", "Web Developer", "Reverse Engineer", "Programmer", "Artist", "Human?", "Writer", "37-564?"];
+  let titles = ["Human", "Artist", "Shell Scripter", "Web Developer", "Flutter", "[redacted]", "Graphic Designer", "Reverse Engineer", "Programmer", "PHP", "React", "Human?", "Writer", "37-564?"];
   if (i == titles.length) {
     i = 0;
   }
