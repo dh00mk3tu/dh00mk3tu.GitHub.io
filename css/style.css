@@ -193,7 +193,7 @@ ol {
 }
 .blog-host {
     display: flex;
-    flex-direction: column;
+    /* flex-direction: column; */
     justify-content: center;
     align-items: center;
     /* flex: 0; */
@@ -507,6 +507,9 @@ a {
     }
     .card-house {
         flex-wrap: wrap;
+    }
+    .bloh-host {
+        flex-direction: column;
     }
     input, textarea {
         font-size: 15px;
