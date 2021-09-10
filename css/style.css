@@ -11,7 +11,7 @@ Foreground Contrast: #32E0C4
     --background: #222831;
     --background-contrast: #393e46;
     --foreground: #EEEEEE;
-    --foreground-contrast: #32E0C4;    
+    --foreground-contrast: #1de2c1;    
 }
 
 @font-face{
@@ -19,6 +19,34 @@ Foreground Contrast: #32E0C4
     font-size: 30px;
     font-family: splash;
 }
+
+@font-face{
+    src: url(/assets/fonts/F25_Bank_Printer.ttf);
+    font-size: 30px;
+    font-family: splash2;
+}
+
+
+/* Animations */
+
+/* Fade In */
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+} 
+
+@keyframes slideUp {
+    to{
+        margin-bottom: 100vh;
+    }
+}
+
+/* Animation End */
+/* Global Declaration End */
 
 * {
     margin: 0;
@@ -36,8 +64,16 @@ Foreground Contrast: #32E0C4
     background-color: var(--background);
 }
 
-.preloader { 
-    font-family: 'splash';
-    font-size: 120px;
+.preloader {
+    height: 100%;
+    font-family: 'splash2';
+    font-size: 80px;
+    /* letter-spacing: 10px; */
     color: var(--foreground);
+    animation: fadeIn 0.5s ease-in-out;
 }
+
+.intro {
+    height: 100%;
+}
+
