@@ -22,7 +22,7 @@ Foreground Contrast: #32E0C4
 
 @font-face{
     src: url(/assets/fonts/F25_Bank_Printer.ttf);
-    font-size: 30px;
+    font-size: 25px;
     font-family: splash2;
 }
 
@@ -55,6 +55,7 @@ Foreground Contrast: #32E0C4
 }
 
 .root-container {
+
     width: 100vw;
     height: 100vh;
     display: flex;
@@ -71,6 +72,12 @@ Foreground Contrast: #32E0C4
     /* letter-spacing: 10px; */
     color: var(--foreground);
     animation: fadeIn 0.5s ease-in-out;
+}
+
+.reveal {
+    position: relative;
+    color: var(--foreground);
+    font-size: 55px;
 }
 
 .intro {
