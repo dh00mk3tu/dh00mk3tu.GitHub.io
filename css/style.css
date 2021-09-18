@@ -38,12 +38,18 @@ Foreground Contrast: #32E0C4
         opacity: 1;
     }
 } 
-
-@keyframes slideUp {
-    to{
-        margin-bottom: 100vh;
+/* SqueezeIN - Width */
+@keyframes squeezeIn-w {
+    from {
+        width: 0;
+    }
+    to {
+        width: 100%;
     }
 }
+
+/* Reveal Button Animation */
+
 
 /* Animation End */
 /* Global Declaration End */
@@ -51,36 +57,49 @@ Foreground Contrast: #32E0C4
 * {
     margin: 0;
     padding: 0;
-    overflow: hidden;
+    background-color: var(--background);
+    scroll-behavior: smooth;
 }
 
 .root-container {
-
-    width: 100vw;
+    scroll-snap-type: y mandatory;
+    overflow-y: scroll;
     height: 100vh;
+}
+
+a {
+    color: var(--foreground);
+    text-decoration: none;
+}
+
+section {
     display: flex;
-    flex-direction: column;
     justify-content: center;
     align-items: center;
+    color: var(--foreground);
+    height: 100vh;
     background-color: var(--background);
+    font-family: splash2;
+    font-size: 30px;
+    scroll-snap-align: start;    
 }
 
 .preloader {
-    height: 100%;
-    font-family: 'splash2';
-    font-size: 80px;
-    /* letter-spacing: 10px; */
-    color: var(--foreground);
-    animation: fadeIn 0.5s ease-in-out;
+    display: flex;
+    flex-direction: column;
+    position: relative;
 }
 
 .reveal {
-    position: relative;
-    color: var(--foreground);
-    font-size: 55px;
+    position: absolute;
+    bottom: 1.5em;
 }
 
-.intro {
-    height: 100%;
+.reveal > a {
+    border: 2px solid var(--foreground-contrast);
+    padding: .5em;
 }
 
+.main-content {
+    background-color: var(--background-contrast);
+}
